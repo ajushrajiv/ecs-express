@@ -38,4 +38,28 @@ jobs:
         docker build -t ecr-demo .    
         docker tag ecr-demo:latest 144130276541.dkr.ecr.eu-central-1.amazonaws.com/ecr-demo:latest
         docker push 144130276541.dkr.ecr.eu-central-1.amazonaws.com/ecr-demo:latest
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint
+        uses: actions/checkout@v2
+    
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+    
+      - name: Install Dependencies
+        run: npm ci
+    
+      - name: Run ESLint
+        run: npm run lint
+
+
+    
+    
+        
+  
+    
+    
 
