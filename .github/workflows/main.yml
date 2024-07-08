@@ -33,6 +33,7 @@ jobs:
         REPOSITORY: ecr-demo
         IMAGE_TAG: ${{ github.sha }}
       run: |
-        docker build -t $REGISTRY/ecr-demo:$IMAGE_TAG .
-        docker push $REGISTRY/ecr-demo:$IMAGE_TAG
+        docker build -t ecr-demo .    
+        docker tag ecr-demo:latest 144130276541.dkr.ecr.eu-central-1.amazonaws.com/ecr-demo:latest
+        docker push 144130276541.dkr.ecr.eu-central-1.amazonaws.com/ecr-demo:latest
 
