@@ -1,0 +1,20 @@
+{
+  "name": "ecs-express",
+  "version": "1.0.0",
+  "description": "example-ecs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+     "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0"
+  }
+}
