@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "node index.js",
-     "lint": "eslint ."
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
