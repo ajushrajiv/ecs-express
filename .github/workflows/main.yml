@@ -1,6 +1,6 @@
 name: aws-example-workflow
 
-on: push
+on: workflow_dispatch
 
 jobs: 
   # copies the repository contents to the runner("copy" is the name of the job)
