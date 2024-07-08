@@ -1,0 +1,13 @@
+name: aws-example-workflow
+
+on: push
+
+jobs: 
+  # copies the repository contents to the runner("copy" is the name of the job)
+  copy:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: checkout
+      uses: actions/checkout@v4
+    - name: List files
+      run: ls -la
