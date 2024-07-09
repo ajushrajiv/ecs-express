@@ -42,7 +42,7 @@ jobs:
     # lint (check for syntax)
     runs-on: ubuntu-latest
     steps:
-      - name: Lint
+      - name: checkout
         uses: actions/checkout@v2
     
       - name: Use Node.js
@@ -59,7 +59,7 @@ jobs:
     # integrated simple testing using supertest
     runs-on: ubuntu-latest
     steps:
-      - name: Lint
+      - name: checkout
         uses: actions/checkout@v2
     
       - name: Use Node.js
